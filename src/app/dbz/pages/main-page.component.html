@@ -1,1 +1,10 @@
-<h1>DBZ Main Page</h1>
+<h1 class="text-xl font-bold border-b-[1px] pb-4">DBZ Personajes</h1>
+
+<section class="flex flex-col gap-2 p-6 md:flex-row">
+  <article class="flex-1">
+    <!-- List Component  -->
+    <dbz-list [characterList]="characters"></dbz-list>
+  </article>
+  <!-- Form Component  -->
+  <dbz-add-character></dbz-add-character>
+</section>
