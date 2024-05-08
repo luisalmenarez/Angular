@@ -6,5 +6,7 @@
     <dbz-list [characterList]="characters"></dbz-list>
   </article>
   <!-- Form Component  -->
-  <dbz-add-character></dbz-add-character>
+  <dbz-add-character
+    (onNewCharacter)="onNewCharacter($event)"
+  ></dbz-add-character>
 </section>
