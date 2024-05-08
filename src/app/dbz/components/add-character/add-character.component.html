@@ -4,18 +4,24 @@
     <input
       class="block w-full px-4 py-2 border border-gray-400 rounded-sm focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
       type="text"
+      name="name"
+      [(ngModel)]="character.name"
       placeholder="Nombre personaje"
     />
     <input
       class="block w-full px-4 py-2 border border-gray-400 rounded-sm focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
       type="number"
+      name="power"
+      [(ngModel)]="character.power"
       placeholder="Poder"
     />
     <button
+      (click)="saveCharacter()"
       class="relative w-full px-6 py-2 text-center text-green-600 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-10 before:bg-green-500/10 before:transition-all before:duration-300 hover:before:opacity-0 hover:before:scale-50 after:absolute after:top-0 after:left-0 after:w-full after:h-full after:z-10 after:opacity-0 after:transition-all after:duration-300 after:border after:border-green-600 after:scale-125 hover:after:opacity-100 hover:after:scale-100"
       type="submit"
     >
       Agregar
     </button>
+    <pre class="mt-6"> {{ character | json }} </pre>
   </form>
 </article>
