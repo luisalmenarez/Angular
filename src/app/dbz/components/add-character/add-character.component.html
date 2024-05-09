@@ -1,7 +1,7 @@
-<article class="flex flex-row">
+<article class="flex flex-row justify-center">
   <form
     (ngSubmit)="saveCharacter()"
-    class="grid gap-1 divide-y divide-gray-200 rounded-md"
+    class="flex flex-col flex-1 gap-1 divide-y divide-gray-200 rounded-md"
   >
     <h4 class="font-bold">Agregar personaje</h4>
     <input
@@ -24,6 +24,6 @@
     >
       Agregar
     </button>
-    <pre class="mt-6"> {{ character | json }} </pre>
+    <!-- <pre class="mt-6"> {{ character | json }} </pre> -->
   </form>
 </article>
